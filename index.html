@@ -21,9 +21,9 @@
     </header>
     <aside id="side" class="close">
         <ul>
-            <li class="font-effect-fire"><a href="#home" class="active" id="hm">Home</a></li>
-            <li class="font-effect-fire"><a href="#article" id="ar">Article</a></li>
-            <li class="font-effect-fire"><a href="#rate" id="rt">Like</a></li>
+            <li class="font-effect-fire"><a href="#home" class="active" id="hm1">Home</a></li>
+            <li class="font-effect-fire"><a href="#article" id="ar1">Article</a></li>
+            <li class="font-effect-fire"><a href="#rate" id="rt1">Like</a></li>
         </ul>
     </aside>
     <section id="home">
@@ -85,7 +85,30 @@
         let hm = document.getElementById("hm");
         let ar = document.getElementById("ar");
         let rt = document.getElementById("rt");
+	    let hm1 = document.getElementById("hm1");
+        let ar1 = document.getElementById("ar1");
+        let rt1 = document.getElementById("rt1");
+        
+        hm1.onclick = function() {
+            if(side.classList.contains("open")){
+                side.classList.remove("open");
+                side.classList.add("close");
+            }
+        }
 
+        ar1.onclick = function() {
+            if(side.classList.contains("open")){
+                side.classList.remove("open");
+                side.classList.add("close");
+            }
+        }
+
+        rt1.onclick = function() {
+	    if(side.classList.contains("open")){
+                side.classList.remove("open");
+                side.classList.add("close");
+            }
+        }
 
         like.onclick = function() {
             if (like.style.color("gold")) {
