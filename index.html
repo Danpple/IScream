@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IScream</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|fire">
+    <link rel="stylesheet" href="iscream.css">
+    <script defer src="iscream.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-effect-fire"><span class="is">IS</span>cream</h1>
+        <ul>
+            <li class="font-effect-fire"><a href="#home" class="active" id="hm">Home</a></li>
+            <li class="font-effect-fire"><a href="#article" id="ar">Article</a></li>
+            <li class="font-effect-fire"><a href="#rate" id="rt">Like</a></li>
+        </ul>
+        <button id="btn1"><ion-icon name="menu"></ion-icon></button>
+    </header>
+    <aside id="side" class="close">
+        <ul>
+            <li class="font-effect-fire"><a href="#home" class="active" id="hm">Home</a></li>
+            <li class="font-effect-fire"><a href="#article" id="ar">Article</a></li>
+            <li class="font-effect-fire"><a href="#rate" id="rt">Like</a></li>
+        </ul>
+    </aside>
+    <section id="home">
+           <img src="./dragon.gif" alt="gif">
+           <h1>HAPPY HALLOWEEN</h1>
+           <h3>That spooky time is here!</h3>
+    </section>
+    <section id="article">
+        <h2 class="font-effect-fire-animation">Article</h2>
+        <hr class="line">
+        <hr class="linex">
+        <hr class="linexx">
+        <div class="ice_cream">
+            <p class="hidden">U scream, They scream,<br> We all scream <br>for <span class="cre">IScream</span></p>
+            <img src="./ice-cream-explosion.gif" alt="img">
+        </div>
+        <hr class="dash">
+        <div class="hal">            
+            <img src="./fire-99.gif" alt="fire">
+            <p class="hidden">Halloween! Halloween!<br>Spooky! Spooky!<br>Hallooweeen!...</p>
+        </div>
+        <hr class="dash">
+        <div class="bats">
+            <img src="./bat.gif" alt="bats gif">
+            <small>Let us free!!!</small>
+        </div>
+        <hr class="dash">
+        <section class="trick">
+            <img src="./dragon1.gif" alt="exp" id="spook" class="hide">
+            <p class="hidden">TRICK OR<br> TREAT..</p>
+            <button id="btn" class="hidden">Click Me</button>
+        </section>
+        <hr class="dash">
+        <div class="drag">
+            <div class="dragula">
+                <h1 class="hidden">I'M DRAGULA</h1>
+                <img src="./dracula.jpg" alt="i'm dragula" id="dragula">
+            </div>
+            <p class="hidden">I von to suck your blood</p>
+        </div>  
+    </section>
+    <section id="rate">
+        <img src="./bloodline-blood.gif" alt="" id="light">
+        <h2 class="font-effect-fire-animation">Like it</h2>
+        <hr class="liner">
+        <small>Give it a thumbs up</small>
+        <div class="stars">
+            <a href="https://github.com/Danpple/IScream" target="_blank"><ion-icon name="thumbs-up-sharp" id="like" class="unlinked"></ion-icon></a>
+        </div>
+        <p>I will be waiting for you</p>
+    </section>
+    <footer>CopyRight @ 2022 <a href="./readme.html" target="_blank">DANTEL</a>. All Rights Reserved</footer>
+    <script>
+        let btn = document.getElementById("btn");
+        let spook = document.getElementById("spook");
+        let btn1 = document.getElementById("btn1");
+        let side = document.getElementById("side");
+        let like = document.getElementById("like");
+        let hm = document.getElementById("hm");
+        let ar = document.getElementById("ar");
+        let rt = document.getElementById("rt");
+
+
+        like.onclick = function() {
+            if (like.style.color("gold")) {
+                like.style.color("gold");
+            }
+            else {
+                like.style.color("black");
+            }
+        }
+
+        btn1.onclick = function() {
+            if (side.classList.contains("close")) {
+                side.classList.remove("close");
+                side.classList.add("open");
+            }
+            else {
+                side.classList.remove("open");
+                side.classList.add("close");
+            }
+        }
+         
+        btn.onclick = function() {
+            if (spook.classList.contains("hide")) {
+                spook.classList.remove("hide");
+                spook.classList.add("show");
+            }
+            else {
+                spook.classList.remove("show");
+                TimeRanges(0-3);
+                spook.classList.add("hide");
+            }
+        }
+        
+        hm.onclick = function() {
+            hm.classList.add("active");
+            ar.classList.remove("active");
+            rt.classList.remove("active");
+        }
+
+        ar.onclick = function() {
+            hm.classList.remove("active");
+            ar.classList.add("active");
+            rt.classList.remove("active");
+        }
+
+        rt.onclick = function() {
+            hm.classList.remove("active");
+            ar.classList.remove("active");
+            rt.classList.add("active");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

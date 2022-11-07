@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|fire");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 400ms all ease;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: all 400ms ease;
+    background: #4423b3;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/*************   START OF HEADER   *************/
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 2px 20px;
+    z-index: 50;
+    background: transparent;
+}
+
+header h1 {
+    animation: colorhue 1s ease infinite;
+    font-size: 4vw;
+    z-index: 50;
+    font-family: 'Rancho', serif;
+}
+
+@keyframes colorhue {
+    0% {
+        color: red;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+header h1 .is {
+    font-size: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 0;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+header button {
+    display: none;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: rgb(240, 125, 125);
+    color: rgb(255, 255, 255);
+}
+
+/*************   END OF HEADER   *************/
+
+
+/*************   START OF HOME SECTION   *************/
+
+#home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 268px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+#home h1 {
+    font-size: 3.7em;
+    animation: fadein 1.7s ease-in-out forwards;
+    transition: all 400ms ease;
+    color: rgb(240, 41, 41);
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+#home h3 {
+    font-size: 2em;
+    animation: fadein 2s ease-in-out forwards;
+    transition: all 400ms ease;
+    color: rgb(240, 41, 41);
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+@keyframes fadein {
+    0% {
+        transform: scale(0) translateY(50vh);
+    }
+    100% {
+        transform: scale(1.3) translateY(9vh);
+    }
+}
+
+/*************   END OF HOME SECTION   *************/
+
+
+
+/*************   START OF ARTICLE SECTION   *************/
+
+#article h2 {
+    text-align: center;
+    font-size: 4.5em;
+    margin-top: 5px;
+    margin-bottom: -13px;
+}
+
+#article .line {
+    width: 17%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+#article .linex {
+    width: 15%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+#article .linexx {
+    width: 13%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
+
+#article .dash {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 95%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article .ice_cream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    font-family: 'Rancho', serif;
+}
+
+#article .ice_cream p {
+    font-size: 3.5em;
+}
+
+#article .ice_cream p .cre {
+    font-family: 'Rancho', serif;
+}
+
+#article .ice_cream img {
+    width: 20%;
+    height: 30vh;
+}
+
+#article .hal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    background: black;
+    height: 60vh;
+}
+
+#article .hal p {
+    color: white;
+}
+
+#article .hal img {
+    width: 50%;
+    height: 80%;
+}
+
+#article p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#article big {
+    text-align: center;
+}
+
+#article img {
+    text-align: center;
+}
+
+#article .bats {
+    padding: 50px;
+}
+
+#article .bats img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article .bats small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+ 
+#article .trick {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Rancho', serif;
+}
+
+#article .trick p {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#article .trick button {
+    margin-top: 30px;
+    width: 20%;
+    height: 6vh;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    background: transparent;
+    color: white;
+}
+
+.trick {
+    width: 100%;
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trick > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100000000;
+}
+
+.show {
+    display: inline-block;
+    transition: 400ms all ease;
+    animation: anim 2.5s ease forwards;
+}
+@keyframes anim {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    50% {
+        display: inline-block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+.hide {
+    display: none;
+    opacity: 0;
+    transition: 400ms all ease;
+}
+
+.drag {
+    padding: 50px;
+    margin-top: -10px;
+    background: white;
+}
+
+.drag .dragula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.drag .dragula h1 {
+    font-size: 10vw;
+    font-family: 'Rubik Wet Paint', cursive;
+    color: rgb(138, 4, 4);
+}
+
+.drag p {
+    margin-top: -50px;
+    font-size: 1vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Wet Paint', cursive;
+    margin-bottom: 100px;
+    color: rgb(161, 7, 7);
+}
+
+/*************   END OF ARTICLE SECTION   *************/
+
+
+/*************   START OF RATE SECTION   *************/
+
+#rate {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(#2b1055, #6530e2);
+}
+
+#rate #light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    filter: blur(0.3);
+}
+
+#rate h2 {
+    font-size: 3.7em;
+    margin-top: 20px;
+    color: white;
+    z-index: 10;
+    opacity: 1;
+    margin-bottom: -10px;
+    z-index: 100;
+}
+
+#rate .liner {
+    width: 29%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    z-index: 100;
+}
+
+#rate small {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    z-index: 100;
+}
+
+#rate .stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5vw;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    z-index: 100;
+}
+
+.stars ion-icon {
+    font-size: 6em;
+}
+
+.stars ion-icon:hover {
+    color: gold;
+    transform: scale(1.2);
+    transition: 0.5s ease all;
+}
+
+#rate p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/*************   END OF RATE SECTION   *************/
+
+
+/*************   START OF FOOTER   *************/
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    color: wheat;
+    background-color: rgb(86, 22, 189);
+}
+
+footer a {
+    text-decoration: underline;
+    color: rgb(245, 231, 205);
+}
+
+footer a:hover {
+    color: rgb(175, 166, 166);
+}
+/*************   END OF FOOTER   *************/
+
+/*************   OTHERS *******************/
+.appear {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: blur(0);
+    transition: 400ms all ease;
+}
+.hidden {
+    transition: none;
+    opacity: 0;
+    transform: scale(0) rotate(5deg);
+    filter: blur(1);
+}
+/*************   OTHERS *******************/
+
+
+/*************   START OF ASIDE   *************/
+aside {
+    display: none;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: 50px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+aside ul {
+    display: block;
+}
+
+aside ul li {
+    list-style: none;
+    margin-bottom: 25vh;
+}
+
+aside ul li:nth-child(1) {
+    margin-top: 10vh;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.9em;
+}
+
+aside ul li a:active {
+    text-decoration: underline;
+}
+
+.close {
+    display: none;
+    transition: 400ms all ease;
+}
+
+.open {
+    background-color: rgb(146, 12, 12);
+    display: inline-block;
+    transition: 400ms all ease;
+}
+/*************   END OF ASIDE   *************/
+
+
+/****************   MEDIA QUERIES   ****************/
+@media screen and (max-width: 930px) {
+    header {
+        max-width: 100%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header ul {
+        display: none;
+    }
+    header button {
+        display: inline-block;
+        padding: 10px;
+        background: transparent;
+        font-size: 2em;
+        border: none;
+    }
+    header button ion-icon {
+        font-size: 1.5em;
+    }
+    #home {
+        padding: 2px;
+        max-width: 100%;
+    }
+    @keyframes fadein {
+        0% {
+            transform: scale(0) translateY(100vh);
+        }
+        100% {
+            transform: scale(1) translateY(40vh);
+        }
+    }
+    #article .ice_cream {
+        display: block;
+        gap: 10px;
+        max-width: 100%;
+    }
+    #article .ice_cream img {
+        width: 100%;
+    }
+    #article .hal {
+        display: block;
+        padding: 2px;
+        max-width: 100%;
+    }
+    #article .hal img {
+        width: 100%;
+        height: 50%;
+    }
+    #article .bats img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #article .trick {
+        padding: 5px;
+        max-width: 100%;
+    }
+    #article .trick button {
+        max-width: 80%;
+    }
+    .drag {
+        max-width: 100%;
+    }
+    .drag .dragula {
+        display: block;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+    .drag .dragula img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #rate .stars i img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    aside {
+        display: inline-block;
+    }
+    .stars ion-icon {
+        font-size: 3.5em;
+    }
+    .stars ion-icon:hover {
+        color: gold;
+        transform: scale(1.2);
+        transition: 0.5s ease all;
+    }
+}
